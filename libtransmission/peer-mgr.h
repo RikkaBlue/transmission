@@ -145,6 +145,8 @@ static bool client_banned (const uint8_t * peer_id)
   banned |= !memcmp(peer_id+1, "QD", 2);
   banned |= !memcmp(peer_id+1, "XF", 2);
   banned |= !memcmp(peer_id+1, "BN", 2);
+  banned |= !memcmp(peer_id+1, "DL", 2);
+  banned |= !memcmp(peer_id+1, "GT", 2);
   // if (banned)
   // tr_logAddNamedError ("Client banned.", "(Client filter)");
   return banned;
